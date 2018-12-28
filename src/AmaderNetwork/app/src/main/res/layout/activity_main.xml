@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <!--Row 1-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/rlIntro"
+                    android:layout_weight="0.65"
+                    android:layout_width="match_parent"
+                    android:background="@color/red"
+                    android:layout_margin="5dp"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/ic_game_controller"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:id="@+id/imgV1"/>
+
+                        <TextView
+                            android:id="@+id/tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="Amader Net"
+                            android:textSize="14sp"
+                            android:layout_below="@id/imgV1"/>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rlRouter"
+                    android:layout_weight="0.55"
+                    android:background="@color/yellow"
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/ic_game_controller"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:id="@+id/imgV2"/>
+
+                        <TextView
+                            android:id="@+id/tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="Router"
+                            android:textSize="14sp"
+                            android:layout_below="@id/imgV2"/>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+            <!--End of Row 1-->
+
+            <!--Row 2-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/rlFtp"
+                    android:layout_weight="0.55"
+                    android:layout_width="match_parent"
+                    android:background="@color/lime"
+                    android:layout_margin="5dp"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/ic_game_controller"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:id="@+id/imgV3"/>
+
+                        <TextView
+                            android:id="@+id/tv3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="FTP"
+                            android:textSize="14sp"
+                            android:layout_below="@id/imgV3"/>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rlTv"
+                    android:layout_weight="0.55"
+                    android:background="@color/green"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/ic_game_controller"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:id="@+id/imgV4"/>
+
+                        <TextView
+                            android:id="@+id/tv4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="TV"
+                            android:textSize="14sp"
+                            android:layout_below="@id/imgV4"/>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+            <!--End of Row 2-->
+
+            <!--Row 3-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/rlBdix"
+                    android:layout_weight="0.65"
+                    android:layout_width="match_parent"
+                    android:background="@color/blue"
+                    android:layout_margin="5dp"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/ic_game_controller"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:id="@+id/imgV5"/>
+
+                        <TextView
+                            android:id="@+id/tv5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="BDIX"
+                            android:textSize="14sp"
+                            android:layout_below="@id/imgV5"/>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rlPartnerFtp"
+                    android:layout_weight="0.55"
+                    android:background="@color/darkblue"
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/ic_game_controller"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:id="@+id/imgV6"/>
+
+                        <TextView
+                            android:id="@+id/tv6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="Partner FTP"
+                            android:textSize="14sp"
+                            android:layout_below="@id/imgV6"/>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+            <!--End of Row 3-->
+
+            <!--Row 4-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/rlEducation"
+                    android:layout_weight="0.55"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:background="@color/darkviolet"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/ic_game_controller"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:id="@+id/imgV7"/>
+
+                        <TextView
+                            android:id="@+id/tv7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="Education"
+                            android:textSize="14sp"
+                            android:layout_below="@id/imgV7"/>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rlSports"
+                    android:layout_weight="0.55"
+                    android:background="@color/violet"
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/ic_game_controller"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:id="@+id/imgV8"/>
+
+                        <TextView
+                            android:id="@+id/tv8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="Sports"
+                            android:textSize="14sp"
+                            android:layout_below="@id/imgV8"/>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+            <!--End of Row 4-->
+
+            <!--Row 5-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/rlContact"
+                    android:layout_weight="0.65"
+                    android:layout_width="match_parent"
+                    android:background="@color/green_dark"
+                    android:layout_margin="5dp"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/ic_game_controller"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:id="@+id/imgV9"/>
+
+                        <TextView
+                            android:id="@+id/tv9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="Education"
+                            android:textSize="14sp"
+                            android:layout_below="@id/imgV9"/>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rlAbout"
+                    android:layout_weight="0.55"
+                    android:background="@color/lime_dark"
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/ic_game_controller"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:id="@+id/imgV10"/>
+
+                        <TextView
+                            android:id="@+id/tv10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="Sports"
+                            android:textSize="14sp"
+                            android:layout_below="@id/imgV10"/>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+            <!--End of Row 5-->
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
