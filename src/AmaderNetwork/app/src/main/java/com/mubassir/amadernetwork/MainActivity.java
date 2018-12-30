@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         switch (v.getId()) {
 
             case R.id.alpha:
-                Intent alphaIntent=new Intent(this,testActivity.class);
+                Intent alphaIntent=new Intent(this,MainActivityTworow.class);
                 startActivity(alphaIntent);
                 break;
 

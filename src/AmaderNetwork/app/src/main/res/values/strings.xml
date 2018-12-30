@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Amader Network</string>
     <string name="dashboardTextSize">16sp</string>
+    <string name="txt_about">About</string>
 </resources>

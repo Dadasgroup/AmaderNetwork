@@ -4,6 +4,9 @@ public class Card {
     String Title;
     int BackgroundImage;
     String URL;
+    //for grid layout
+    int LayoutBackgroundColor;
+    int TextBackgroundColor;
 
     public Card() {
     }
@@ -12,6 +15,14 @@ public class Card {
         Title = title;
         BackgroundImage = backgroundImage;
         this.URL = URL;
+    }
+
+    public Card(String title, int backgroundImage, String URL, int layoutBackgroundColor, int textBackgroundColor) {
+        Title = title;
+        BackgroundImage = backgroundImage;
+        this.URL = URL;
+        LayoutBackgroundColor = layoutBackgroundColor;
+        TextBackgroundColor = textBackgroundColor;
     }
 
     public String getTitle() {
@@ -36,5 +47,22 @@ public class Card {
 
     public void setURL(String URL) {
         this.URL = URL;
+    }
+
+    //Grid layout background
+    public int getLayoutBackgroundColor() {
+        return LayoutBackgroundColor;
+    }
+
+    public void setLayoutBackgroundColor(int layoutBackgroundColor) {
+        LayoutBackgroundColor = layoutBackgroundColor;
+    }
+
+    public int getTextBackgroundColor() {
+        return TextBackgroundColor;
+    }
+
+    public void setTextBackgroundColor(int textBackgroundColor) {
+        TextBackgroundColor = textBackgroundColor;
     }
 }
