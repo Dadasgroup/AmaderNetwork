@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
                 startActivity(linksIntent);
                 break;
             case R.id.about:
-                Intent aboutIntent=new Intent(this,testActivity.class);
+                Intent aboutIntent=new Intent(this,NewsFeed.class);
                 startActivity(aboutIntent);
                 break;
 
